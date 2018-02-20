@@ -27,11 +27,19 @@ namespace KNFDemo
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+
+
+
+            #region [Theme Styles]
+
+            #region [BEGIN GLOBAL MANDATORY STYLES]
+
             // < !--BEGIN GLOBAL MANDATORY STYLES-- >
             // <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
             // <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
             // <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
             // <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+            // < !--END GLOBAL MANDATORY STYLES-- >
 
             bundles.Add(new StyleBundle("begin_global_mandatory_styles").Include(
                 "~/assets/global/plugins/font-awesome/css/font-awesome.min.css",
@@ -40,14 +48,27 @@ namespace KNFDemo
                 "~/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css"
                 ));
 
+            #endregion
+
+            #region [BEGIN THEME GLOBAL STYLES]
+
             // <!-- BEGIN THEME GLOBAL STYLES -->
             // <link href="../assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
             // <link href="../assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+            // <!-- END THEME GLOBAL STYLES -->
 
             bundles.Add(new StyleBundle("begin_theme_global_styles").Include(
                 "~/assets/global/css/components-md.min.css",
                 "~/assets/global/css/plugins-md.min.css"
                 ));
+
+            #endregion
+
+            #endregion
+
+            #region [Theme Scripts]
+
+            #region [BEGIN THEME LAYOUT STYLES]
 
             // <!-- BEGIN THEME LAYOUT STYLES -->
             // <link href="../assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
@@ -60,6 +81,10 @@ namespace KNFDemo
                 "~/assets/layouts/layout3/css/custom.min.css"
                 ));
 
+            #endregion
+                      
+            #region [BEGIN CORE PLUGINS]
+
             // <!-- BEGIN CORE PLUGINS -->
             // <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
             // <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
@@ -70,17 +95,47 @@ namespace KNFDemo
             // <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
             // <!-- END CORE PLUGINS -->
 
+            bundles.Add(new ScriptBundle("begin_core_plugins").Include(
+                "~/assets/global/plugins/jquery.min.js",
+                "~/assets/global/plugins/bootstrap/js/bootstrap.min.js",
+                "~/assets/global/plugins/js.cookie.min.js",
+                "~/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
+                "~/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+                "~/assets/global/plugins/jquery.blockui.min.js",
+                "~/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js"
+                ));
 
-        <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
-        <!-- END THEME GLOBAL SCRIPTS -->
-        <!-- BEGIN THEME LAYOUT SCRIPTS -->
-        <script src="../assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
-        <!-- END THEME LAYOUT SCRIPTS -->
+            #endregion
 
+            #region [BEGIN THEME GLOBAL SCRIPTS]
 
+            //<!-- BEGIN THEME GLOBAL SCRIPTS -->
+            //<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+            //<!-- END THEME GLOBAL SCRIPTS -->
+
+            bundles.Add(new ScriptBundle("begin_theme_global_scripts").Include(
+                "~/assets/global/scripts/app.min.js"
+                ));
+
+            #endregion
+
+            #region [BEGIN THEME LAYOUT SCRIPTS]
+
+            //<!-- BEGIN THEME LAYOUT SCRIPTS -->
+            //<script src="../assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
+            //<script src="../assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
+            //<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+            //<!-- END THEME LAYOUT SCRIPTS -->
+
+            bundles.Add(new ScriptBundle("begin_theme_layout_scripts").Include(
+                "~/assets/layouts/layout3/scripts/layout.min.js",
+                "~/assets/layouts/layout3/scripts/demo.min.js",
+                "~/assets/layouts/global/scripts/quick-sidebar.min.js"
+                ));
+
+            #endregion
+            
+            #endregion
         }
     }
 }

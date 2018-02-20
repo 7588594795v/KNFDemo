@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -25,6 +26,12 @@ namespace KNFDemo.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+
+        public async Task<ActionResult> Welcome()
+        {            
+            return  View();
         }
     }
 }
