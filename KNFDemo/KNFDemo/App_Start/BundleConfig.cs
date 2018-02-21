@@ -41,11 +41,11 @@ namespace KNFDemo
             // <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
             // < !--END GLOBAL MANDATORY STYLES-- >
 
-            bundles.Add(new StyleBundle("begin_global_mandatory_styles").Include(
-                "~/assets/global/plugins/font-awesome/css/font-awesome.min.css",
-                "~/assets/global/plugins/simple-line-icons/simple-line-icons.min.css",
-                "~/assets/global/plugins/bootstrap/css/bootstrap.min.css",
-                "~/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css"
+            bundles.Add(new StyleBundle("~/begin_global_mandatory_styles").Include(
+                "~/assets/global/plugins/font-awesome/css/font-awesome.css",
+                "~/assets/global/plugins/simple-line-icons/simple-line-icons.css",
+                "~/assets/global/plugins/bootstrap/css/bootstrap.css",
+                "~/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.css"
                 ));
 
             #endregion
@@ -57,9 +57,9 @@ namespace KNFDemo
             // <link href="../assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
             // <!-- END THEME GLOBAL STYLES -->
 
-            bundles.Add(new StyleBundle("begin_theme_global_styles").Include(
-                "~/assets/global/css/components-md.min.css",
-                "~/assets/global/css/plugins-md.min.css"
+            bundles.Add(new StyleBundle("~/begin_theme_global_styles").Include(
+                "~/assets/global/css/components.css",
+                "~/assets/global/css/plugins.css"
                 ));
 
             #endregion
@@ -75,10 +75,10 @@ namespace KNFDemo
             // <link href="../assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
             // <link href="../assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
             // <!-- END THEME LAYOUT STYLES -->
-            bundles.Add(new StyleBundle("begin_theme_layout_styles").Include(
-                "~/assets/layouts/layout3/css/layout.min.css",
-                "~/assets/layouts/layout3/css/themes/default.min.css",
-                "~/assets/layouts/layout3/css/custom.min.css"
+            bundles.Add(new StyleBundle("~/begin_theme_layout_styles").Include(
+                "~/assets/layouts/layout3/css/layout.css",
+                "~/assets/layouts/layout3/css/themes/default.css",
+                "~/assets/layouts/layout3/css/custom.css"
                 ));
 
             #endregion
@@ -95,14 +95,14 @@ namespace KNFDemo
             // <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
             // <!-- END CORE PLUGINS -->
 
-            bundles.Add(new ScriptBundle("begin_core_plugins").Include(
-                "~/assets/global/plugins/jquery.min.js",
-                "~/assets/global/plugins/bootstrap/js/bootstrap.min.js",
-                "~/assets/global/plugins/js.cookie.min.js",
-                "~/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
-                "~/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
-                "~/assets/global/plugins/jquery.blockui.min.js",
-                "~/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js"
+            bundles.Add(new ScriptBundle("~/begin_core_plugins").Include(
+                "~/assets/global/plugins/jquery.js",
+                "~/assets/global/plugins/bootstrap/js/bootstrap.js",
+                "~/assets/global/plugins/js.cookie.js",
+                "~/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js",
+                "~/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.js",
+                "~/assets/global/plugins/jquery.blockui.js",
+                "~/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.js"
                 ));
 
             #endregion
@@ -113,8 +113,8 @@ namespace KNFDemo
             //<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
             //<!-- END THEME GLOBAL SCRIPTS -->
 
-            bundles.Add(new ScriptBundle("begin_theme_global_scripts").Include(
-                "~/assets/global/scripts/app.min.js"
+            bundles.Add(new ScriptBundle("~/begin_theme_global_scripts").Include(
+                "~/assets/global/scripts/app.js"
                 ));
 
             #endregion
@@ -127,10 +127,10 @@ namespace KNFDemo
             //<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
             //<!-- END THEME LAYOUT SCRIPTS -->
 
-            bundles.Add(new ScriptBundle("begin_theme_layout_scripts").Include(
-                "~/assets/layouts/layout3/scripts/layout.min.js",
-                "~/assets/layouts/layout3/scripts/demo.min.js",
-                "~/assets/layouts/global/scripts/quick-sidebar.min.js"
+            bundles.Add(new ScriptBundle("~/begin_theme_layout_scripts").Include(
+                "~/assets/layouts/layout3/scripts/layout.js",
+                "~/assets/layouts/layout3/scripts/demo.js",
+                "~/assets/layouts/global/scripts/quick-sidebar.js"
                 ));
 
             #endregion
