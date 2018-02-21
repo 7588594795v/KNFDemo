@@ -5921,6 +5921,8 @@
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
     <Content Include="Views\Home\Welcome.cshtml" />
     <Content Include="tsconfig.json" />
+    <Content Include="Views\Shared\_PartialHeaderMenu.cshtml" />
+    <Content Include="Views\Shared\_PartialHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
