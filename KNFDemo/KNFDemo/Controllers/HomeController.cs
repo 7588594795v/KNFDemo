@@ -28,8 +28,7 @@ namespace KNFDemo.Controllers
             return View();
         }
 
-
-        public async Task<ActionResult> Welcome()
+        public ActionResult Welcome()
         {            
             return  View();
         }
