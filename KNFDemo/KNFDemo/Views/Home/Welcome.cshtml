@@ -4,7 +4,6 @@
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-
 <div class="page-container">
     <!-- BEGIN CONTENT -->
     <div class="page-content-wrapper">
@@ -82,6 +81,13 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12 seperator">
                                     <h3>LAYOUT</h3>
                                     <ul class="theme-settings">
+                                        <li>
+                                            Theme Style
+                                            <select class="theme-setting theme-setting-style form-control input-sm input-small input-inline tooltips" data-original-title="Change theme style" data-container="body" data-placement="left">
+                                                <option value="boxed" selected="selected">Square corners</option>
+                                                <option value="rounded">Rounded corners</option>
+                                            </select>
+                                        </li>
                                         <li>
                                             Layout
                                             <select class="theme-setting theme-setting-layout form-control input-sm input-small input-inline tooltips" data-original-title="Change layout type" data-container="body" data-placement="left">
@@ -758,4 +764,3 @@
     </div>
     <!-- END QUICK SIDEBAR -->
 </div>
-

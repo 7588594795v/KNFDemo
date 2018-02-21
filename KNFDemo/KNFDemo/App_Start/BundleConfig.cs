@@ -41,7 +41,7 @@ namespace KNFDemo
             // <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
             // < !--END GLOBAL MANDATORY STYLES-- >
 
-            bundles.Add(new StyleBundle("~/begin_global_mandatory_styles").Include(
+            bundles.Add(new StyleBundle("~/Metronic/begin_global_mandatory_styles").Include(
                 "~/assets/global/plugins/font-awesome/css/font-awesome.css",
                 "~/assets/global/plugins/simple-line-icons/simple-line-icons.css",
                 "~/assets/global/plugins/bootstrap/css/bootstrap.css",
@@ -57,7 +57,7 @@ namespace KNFDemo
             // <link href="../assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
             // <!-- END THEME GLOBAL STYLES -->
 
-            bundles.Add(new StyleBundle("~/begin_theme_global_styles").Include(
+            bundles.Add(new StyleBundle("~/Metronic/begin_theme_global_styles").Include(
                 "~/assets/global/css/components.css",
                 "~/assets/global/css/plugins.css"
                 ));
@@ -75,7 +75,7 @@ namespace KNFDemo
             // <link href="../assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
             // <link href="../assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
             // <!-- END THEME LAYOUT STYLES -->
-            bundles.Add(new StyleBundle("~/begin_theme_layout_styles").Include(
+            bundles.Add(new StyleBundle("~/Metronic/begin_theme_layout_styles").Include(
                 "~/assets/layouts/layout3/css/layout.css",
                 "~/assets/layouts/layout3/css/themes/default.css",
                 "~/assets/layouts/layout3/css/custom.css"
@@ -95,7 +95,7 @@ namespace KNFDemo
             // <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
             // <!-- END CORE PLUGINS -->
 
-            bundles.Add(new ScriptBundle("~/begin_core_plugins").Include(
+            bundles.Add(new ScriptBundle("~/Metronic/begin_core_plugins").Include(
                 "~/assets/global/plugins/jquery.js",
                 "~/assets/global/plugins/bootstrap/js/bootstrap.js",
                 "~/assets/global/plugins/js.cookie.js",
@@ -113,7 +113,7 @@ namespace KNFDemo
             //<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
             //<!-- END THEME GLOBAL SCRIPTS -->
 
-            bundles.Add(new ScriptBundle("~/begin_theme_global_scripts").Include(
+            bundles.Add(new ScriptBundle("~/Metronic/begin_theme_global_scripts").Include(
                 "~/assets/global/scripts/app.js"
                 ));
 
@@ -127,7 +127,7 @@ namespace KNFDemo
             //<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
             //<!-- END THEME LAYOUT SCRIPTS -->
 
-            bundles.Add(new ScriptBundle("~/begin_theme_layout_scripts").Include(
+            bundles.Add(new ScriptBundle("~/Metronic/begin_theme_layout_scripts").Include(
                 "~/assets/layouts/layout3/scripts/layout.js",
                 "~/assets/layouts/layout3/scripts/demo.js",
                 "~/assets/layouts/global/scripts/quick-sidebar.js"
